@@ -13,11 +13,11 @@ import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: '', redirectTo: 'home', pathMatch: 'full' },
-      { path: 'home', component: HomeComponent },
-      { path: 'forbidden', component: UnauthorizedComponent },
-      { path: 'unauthorized', component: UnauthorizedComponent },
-    ]),
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home', component: HomeComponent },
+    { path: 'forbidden', component: UnauthorizedComponent },
+    { path: 'unauthorized', component: UnauthorizedComponent },
+], { relativeLinkResolution: 'legacy' }),
     AuthConfigModule,
   ],
   providers: [],
