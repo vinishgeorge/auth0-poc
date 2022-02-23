@@ -9,17 +9,19 @@ import { AuthModule, LogLevel } from 'angular-auth-oidc-client';
         redirectUrl: window.location.origin,
         postLogoutRedirectUri: window.location.origin,
         clientId: '4jHTXBp3ubaOYAgZh2RcI6V9GIqCk0Nr',
-        scope: 'openid profile offline_access auth0-user-api-spa',
+        scope: 'openid profile',
         responseType: 'code',
         silentRenew: true,
         useRefreshToken: true,
-        logLevel: LogLevel.Debug,
-        customParamsAuthRequest: {
-          audience: 'https://auth0-api-spa',
-        },
-        customParamsRefreshTokenRequest: {
-          scope: 'openid profile offline_access auth0-user-api-spa',
-        },
+        logLevel: LogLevel.Debug
+        // ,
+        // customParamsAuthRequest: {
+        //   audience: 'https://auth0-api-spa',
+        // }
+        // ,
+        // customParamsRefreshTokenRequest: {
+        //   scope: 'openid profile offline_access auth0-user-api-spa',
+        // },
       },
     }),
   ],

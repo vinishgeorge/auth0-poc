@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   templateUrl: 'home.component.html',
 })
 export class HomeComponent implements OnInit {
-  configuration$: Observable<OpenIdConfiguration>;
+  configuration$: OpenIdConfiguration;
   userDataChanged$: Observable<OidcClientNotification<any>>;
   userData$: Observable<UserDataResult>;
   isAuthenticated = false;
